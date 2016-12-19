@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Inspiration and Amazement</title>
+		<link type="text/css" rel="stylesheet" href="style.css" media="screen">
+		<script type="text/javascript">
+			setTimeout("alert('Welcome! Sign up at the bottom of the page to receive monthly emails highlighting great artists!');", 1500);
+		</script>
+		<script src="jquery-3.0.0.js"></script>
+			<script>
+			$("document").ready(function() {
+
+			$( "#artist1" ).hover(function() {
+    			$( "#artist1 h1"  ).fadeTo( "slow", 0.8);
+    			$( "#artist1").css("background-color", "#cb1f4f");
+ 			});
+
+ 			$( "#artist2" ).hover(function() {
+    			$( "#artist2 h1" ).fadeTo( "slow", 0.8);
+    			$( "#artist2").css("background-color", "#cb1f4f");
+ 			});
+			});
+			</script>
+	</head>
+	<body>
+	<div class= "allcontent">	
+		<ul class= "nav">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="malin/malin.html">Malin</a></li>	
+			<li><a href="avedon/avedon.html">Avedon</a></li>	
+		</ul>
+
+		<div class= "overview">
+			<img src= "images/inspiration.jpg" alt="Inspirationa and Amazement">
+		<p id= "intro">
+			<p id= "artistintro"><strong>Artists who’s work inspires and amazes me.</strong></p>
+
+			<p>These artists consist of photographers and a writer.  They had and have a creative eye unlike anyone else.  They looked and look at the world through a unique lense that has lead each of them to have many admirers and be accredited with top honors in each of their fields.</p>
+
+			<p>Within this website you will find links to information on who these individuals were and are.  Additionally, and most importantly, a display of their most well known work and the artwork I personally find to be inspiring. Enjoy!</p>
+		</div>
+
+		<div id="artist1">	
+		<h1><em>Gray Malin</em></h1>
+			<figure id= "malin1">
+				<a href="malin/malin.html#malin"><img src="images/malin.jpg" alt="Gray Malin Photograph"></a>
+			</figure>
+		</div>	
+
+		<div id="artist2">
+		<h1><em>Richard Avedon</em></h1>
+			<figure id= "avedon1">	
+				<a href="avedon/avedon.html#avedon"><img src="images/avedon.jpg" alt="Richard Avedon Photograph"></a> 
+			</figure>
+		</div>	
+		
+		<footer class= "mailing">
+			<p id="maillist"><em>If you would like to receive monthly emails highlighting new emerging artist with links to their work please sign up below.</em></p>
+		<form action="my-form.php" method="POST" id="form">
+			<label for="name">Name:
+				<input type="text" id="name" name="name">
+			</label><br>
+			<label for="email">Email:
+				<input type="text" id="email" name="email">
+			</label><br>
+			<input type="submit" value="Subscribe Now">
+		</form>			
+		</footer>
+	</div>	
+	</body>	

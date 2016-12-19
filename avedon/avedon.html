@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Richard Avedon</title>
+		<link type="text/css" rel="stylesheet" href="avedon.css" media="screen">
+		<script type="text/javascript">
+		</script>
+		<script src="../jquery-3.0.0.js"></script>
+			<script>
+			$("document").ready(function() {
+
+			$("#apartone").click(function() {
+				$("#apartone").animate({
+  					width: "100%",
+    				opacity: 0.4,
+    				marginLeft: "0.6in",
+    				fontSize: "3em",
+    				borderWidth: "10px"}, 5000);	
+			});
+
+			$( "#fashion" ).hover(function() {
+    			$( "#fashion" ).fadeTo( "fast", 0.4);
+ 			});
+
+ 			$( "#twiggy" ).hover(function() {
+    			$( "#twiggy" ).fadeTo( "fast", 0.4);
+ 			});
+
+ 			$( "#sun" ).hover(function() {
+    			$( "#sun" ).fadeTo( "fast", 0.4);
+ 			});
+
+ 			$( "#bunny" ).hover(function() {
+    			$( "#bunny" ).fadeTo( "fast", 0.4);
+ 			});
+			});
+			</script>
+	</head>
+	<body>
+	<div class= "allcontent">	
+		<ul class= "nav">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../malin/malin.html">Malin</a></li>	
+			<li><a href="avedon.html">Avedon</a></li>	
+		</ul>
+
+		<div class= "overview">
+		<img src="../images/inspiration.jpg" alt="Inspiration and Amazement">
+		</div>
+
+		<div id="apartone">
+		<h1>Richard Avedon: Images Brought To Life</h1>	
+		</div>	
+
+		<div id= "aparttwo">
+			<h2>Most Well Known Work</h2>
+				<p><a href="http://www.nytimes.com/2009/05/14/fashion/14AVEDON.html">Elephants and Twiggy</a></p>
+				<img id="fashion" src="../images/elephant.jpg" alt="Fashion and Elephants" onclick="alert('Title: Fashion and Elephants');">
+				<img id="twiggy" src="../images/twiggy.jpg" alt="Twiggy Model" onclick="alert('Title: Twiggy Model');">
+		</div>	
+
+		<div id= "apartthree">
+			<h2>My Favorite Work</h2>
+				<p><a href="http://www.avedonfoundation.org/fashion">Lots and Lots of Fashion</a></p>
+				<img id="sun" src="../images/fashion.jpg" alt="Woman in Sunglasses" onclick="alert('Title: Woman in Sunglasses');">
+				<img id="bunny" src="../images/fashion2.jpg" alt="Woman with Bunny Ears" onclick="alert('Title: Woman with Bunny Ears');">
+		</div>
+
+		<footer class= "mailing">
+			<p id="maillist"><em>If you would like to receive monthly emails highlighting new emerging artist with links to their work please sign up below.</em></p>
+		<form action="my-form.php" method="POST" id="form">
+			<label for="name">Name:
+				<input type="text" id="name" name="name">
+			</label><br>
+			<label for="email">Email:
+				<input type="text" id="email" name="email">
+			</label><br>
+			<input type="submit" value="Subscribe Now">
+		</form>			
+		</footer>
+	</div>	
+	</body>	
+</html>		

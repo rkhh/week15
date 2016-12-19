@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Gray Malin</title>
+		<link type="text/css" rel="stylesheet" href="malin.css" media="screen">
+		<script type="text/javascript">
+		</script>
+		<script src="../jquery-3.0.0.js"></script>
+			<script>
+			$("document").ready(function() {
+
+			$("#mpartone").click(function() {
+				$("#mpartone").animate({
+  					width: "100%",
+    				opacity: 0.4,
+    				marginLeft: "0.6in",
+    				fontSize: "3em",
+    				borderWidth: "10px"}, 5000);	
+			});
+
+			$( "#red" ).hover(function() {
+    			$( "#red" ).fadeTo( "fast", 0.4);
+ 			});
+
+ 			$( "#two" ).hover(function() {
+    			$( "#two" ).fadeTo( "fast", 0.4);
+ 			});
+
+ 			$( "#coast" ).hover(function() {
+    			$( "#coast" ).fadeTo( "fast", 0.4);
+ 			});
+
+ 			$( "#beach" ).hover(function() {
+    			$( "#beach" ).fadeTo( "fast", 0.4);
+ 			});
+			});
+			</script>
+	</head>
+	<body>
+	<div class= "allcontent">	
+		<ul class= "nav">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="malin.html">Malin</a></li>	
+			<li><a href="../avedon/avedon.html">Avedon</a></li>	
+		</ul>
+
+		<div class="overview">
+		<img src="../images/inspiration.jpg" alt="Inspiration and Amazement">
+		</div>
+
+		<div id="mpartone">
+		<h1 id="malin">Gray Milan: Lanscapes With A Twist</h1>
+		</div>
+
+		<div id="mparttwo">
+			<h2>Most Well Known Work</h2>
+				<p><a href="https://www.graymalin.com/pradamarfa">Prada Marfa</a></p>
+				<img id="red" src="../images/redbow.jpg" alt="Red Bow" onclick="alert('Title: Red Bow');">
+				<img id="two" src="../images/twocowboys.jpg" alt="Two Cowboys" onclick="alert('Title: Two Cowboys');">
+		</div>	
+
+		<div id="mpartthree">
+			<h2>My Favorite Work</h2>
+				<p><a href="https://www.graymalin.com/la-dolce-vita">La Dolce Vita</a></p>
+				<img id="coast" src="../images/coast.jpg" alt="Positano Coast" onclick="alert('Title: Positano Coast');">
+				<img id="beach" src="../images/positano.jpg" alt="Positano Beach" onclick="alert('Title: Positano Beach');">
+		</div>
+
+		<footer class= "mailing">
+			<p id="maillist"><em>If you would like to receive monthly emails highlighting new emerging artist with links to their work please sign up below.</em></p>
+		<form action="my-form.php" method="POST" id="form">
+			<label for="name">Name:
+				<input type="text" id="name" name="name">
+			</label><br>
+			<label for="email">Email:
+				<input type="text" id="email" name="email">
+			</label><br>
+			<input type="submit" value="Subscribe Now">
+		</form>			
+		</footer>
+	</div>	
+	</body>	
+</html>		
